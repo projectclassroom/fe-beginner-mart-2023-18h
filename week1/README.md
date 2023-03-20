@@ -1,12 +1,5 @@
 # Materijal 
 
-Selektuj granu (branch) za materijal po nedeljama.
-- Prva Nedelja: **01-html**
-- Druga Nedelja: **02-html**
-- Treca Nedelja:  **03-css**
-- Cetvrta Nedelja: **04-css**
-- Peta Nedelja: **05-js**
-- Sesta Nedelja: **06-js**
 
 ---
 # Korisni Linkovi 
