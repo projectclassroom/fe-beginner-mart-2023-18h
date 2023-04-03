@@ -3,3 +3,5 @@
 🛠: Page Speed Insight: https://pagespeed.web.dev/
 
 🛠: SEMrush: alat za istraživanje ključnih reči (Placa se)
+
+📹: Preporuka za besplatan SEO sadrzaj na srpskom jeziku: https://www.youtube.com/@NedimSabic/videos (ovo sam pratila za vreme korone, nije reklama, nisam pohađala njegove kurseve, dovoljno mi je bio besplatan sadržaj)
