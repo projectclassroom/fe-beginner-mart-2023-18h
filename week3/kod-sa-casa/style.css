@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-justify {
+    text-align: justify;
+}
