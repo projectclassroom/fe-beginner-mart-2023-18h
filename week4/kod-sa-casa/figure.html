@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure</title>
+</head>
+<body>
+    
+    <!-- Slika sa opisom za korisnika jeste, za browser nije -->
+    <div>
+        <img src="./nature.jpg" width="560" height="230" alt="">
+        <p>This is nature photo</p>
+    </div>
+
+    <!-- Ovo je sada slika sa opisom -->
+    <figure>
+        <img src="./nature.jpg" width="560" height="230" alt="">
+        <figcaption>This is nature photo</figcaption>
+    </figure>
+
+    <figure>
+        <figcaption>John Doe</figcaption>
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos hic explicabo quas?
+        </blockquote>
+    </figure>
+    <figure>
+        <figcaption>Ivo Andric</figcaption>
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos hic explicabo quas?
+        </blockquote>
+    </figure>
+
+    <!-- Code snippets -->
+    <figure>
+        <figcaption>This is JS code</figcaption>
+        <pre>
+            function onNavChange() {
+                let navId = document.getElementById('home');
+                navId.innerHTML = 'Hello';
+            }
+        </pre>
+    </figure>
+</body>
+</html>

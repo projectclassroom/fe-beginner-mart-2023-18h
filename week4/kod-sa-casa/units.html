@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body, h1, h2, h3, h4, h5, h6, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+        main {
+            height: 100vh;
+            background-color: brown;
+        }
+        h1 {
+            font-size: 1rem; /* relatvna u odnosu na dokument 12px *1 rem */
+        }
+        h2 {
+            font-size: 3rem;
+        }
+
+        .container {
+            font-size: 22px;
+        }
+        /*Relativan je u odnosu na njegovog roditelja*/
+        h3 {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Naslov</h1>
+        <h2>Naslov 2</h2>
+
+        <div class="container">
+            <h3>Naslov 3</h3>
+        </div>
+    </main>
+
+</body>
+</html>
