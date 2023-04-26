@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+    <script>
+        function onValidateForm(event) {
+            event.preventDefault(); //ne radi ono inace radis, nemoj refreshovati stranicu
+            console.log(event)
+            //resetujemo stanje na pocetku kada korisnik klinke na dugme subimt
+            document.getElementById('error-name').innerHTML = '';
+            document.getElementById('error-lname').innerHTML = '';
+            document.getElementById('error-email').innerHTML = '';
+
+            const name = document.getElementById('name').value;
+            const lname = document.getElementById('lname').value;
+            const email = document.getElementById('email').value;
+
+            let age = document.getElementById('age').value;//'5'
+            console.log(typeof(age));
+            age = Number(age);//5
+
+            // const age = Number(document.getElementById('age').value);
+
+            //ako je name prazan obavesti korisnika
+
+            //'' == ''
+            // '' -> false
+            // !'' -> !false -> true
+            // !true -> flase
+
+
+            // if (!name) { //if('')
+            //     alert('Please Enter YouR name')
+            // }
+
+            if (name == '') {
+                document.getElementById('error-name').innerHTML = 'Please enter your name';
+                return;
+                // alert('Please Enter YouR name');
+            }
+
+            if (lname == '') {
+                document.getElementById('error-lname').innerHTML = 'Please enter your last  name';
+                return;
+                // alert('Please Enter YouR name');
+            }
+
+            if (email == '') {
+                document.getElementById('error-email').innerHTML = 'Please enter your email';
+                return;
+                // alert('Please Enter YouR name');
+            }
+
+            //age izmedju 18 i 35
+            //ako je age vise od35 i manji od 18
+            // if (age < 18 && age > 35)  {  nije moguce da age u isto vreme bude manji od 18 i veci od 35
+            if (age < 18 || age > 35) { //
+                document.getElementById('error-age').innerHTML = 'Please enter valid age between 18 and 35';
+            }
+
+            
+            // if (0) { //nikad nece uci u telo petlje
+
+            // }
+        }
+    </script>
+</head>
+<body>
+    
+    <form onsubmit="onValidateForm(event)">
+        <label>Name:</label>
+        <input type="text" id="name" value="">
+        <br>
+        <p id="error-name" class="error-msg"></p>
+
+
+        <label>Last Name:</label>
+        <input type="text" id="lname" value="">
+        <br>
+        <p id="error-lname" class="error-msg"></p>
+        <label>Email:</label>
+        <input type="text" id="email" value="">
+        <p id="error-email" class="error-msg"></p>
+        <!-- <p id="counter">6</p> -->
+
+        <label>Age:</label>
+        <input type="number" id="age" value="">
+        <p id="error-age" class="error-msg"></p>
+        <button type="submit">SEND</button>
+    </form>
+</body>
+</html>

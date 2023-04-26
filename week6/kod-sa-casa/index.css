@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+  pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var, b, u, i, center,
+  dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+  thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+  header, hgroup, menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+  }
+  
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  #home {
+      display: block;
+  }
+  
+  #about {
+      display: none;
+  }
+  
+  #contact {
+      display: none;
+  }
+  
+  .header {
+      background-color: black;
+  
+  }
+  
+  .nav-item {
+      display: inline-block;
+      padding: 16px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+  }
+  /*dve klase koje
+  stoje jedna pored druge
+  
+  */
+  .nav-item.active {
+      text-decoration: underline;
+  }
+  
+  .nav-item:hover {
+      color: grey;
+  }
+  
+  /*
+  .nav-item je na roditeljskom elmentu
+  za klasu nav-link
+  */
+  .nav-item .nav-link {
+      font-size: 22px;
+  }
+  
+  .nav-link {
+      color: inherit;
+      text-decoration: inherit;
+  }
+
+  header {
+    height: 70px;
+    background-color: blue;
+  }
+
+  main {
+    background-color: blueviolet;
+    height: calc(100vh - 70px);
+  }

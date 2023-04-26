@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./landingPage.css">
+    <script>
+        function onNavChange(nav) {
+            //ako je nav vrednosti  nav-home onda prikazi homestranicu, a zatim sakrij about i sakrij kontak deo
+            if (nav == 'nav-home') {
+                document.getElementById('home').style.display = "block";
+                document.getElementById('about').style.display = "none";
+                document.getElementById('contact').style.display = "none";
+
+                document.getElementById('nav-home').classList.add('active');
+                document.getElementById('nav-about').classList.remove('active');
+                document.getElementById('nav-contact').classList.remove('active');
+
+
+            } else if (nav == 'nav-about') {
+                document.getElementById('home').style.display = "none";
+                document.getElementById('about').style.display = "block";
+                document.getElementById('contact').style.display = "none";
+
+                //elemet sa id nav-home ima listu klasa nav-item active
+                document.getElementById('nav-home').classList.remove('active');
+                document.getElementById('nav-about').classList.add('active');
+                document.getElementById('nav-contact').classList.remove('active');
+
+            } else if (nav == 'nav-contact') {
+                document.getElementById('home').style.display = "none";
+                document.getElementById('about').style.display = "none";
+                document.getElementById('contact').style.display = "block";
+
+                document.getElementById('nav-home').classList.remove('active');
+                document.getElementById('nav-about').classList.remove('active');
+                document.getElementById('nav-contact').classList.add('active');
+
+            } else {
+                console.log('Something went wrong nav is undefined')
+            }
+
+
+        }
+    </script>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item active" id="nav-home" onclick="onNavChange('nav-home')"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item" id="nav-about" onclick="onNavChange('nav-about')" ><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item" id="nav-contact" onclick="onNavChange('nav-contact')"><a class="nav-link"  href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="home">
+            <h2>Homepage</h2>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, rem. Enim alias aut quae. Nam totam molestias magni at hic nostrum, dolorum accusamus velit, nihil repellendus ab ad dicta vel? Molestiae ratione illum, iure minima quia provident? Cum blanditiis impedit cupiditate vero veniam autem ipsam optio fugit ad, aut enim aspernatur neque eligendi nesciunt quos sequi suscipit, excepturi totam labore tenetur et dicta cumque. Nobis laborum veritatis tempore magni tempora quo suscipit, commodi perspiciatis quasi exercitationem, assumenda, delectus recusandae rem mollitia error in qui est libero autem ipsa obcaecati aliquid. Ratione enim expedita minima quis, quae incidunt hic at veritatis? Vero ipsum, nihil ut mollitia aliquid perferendis provident explicabo aliquam quidem vel sed repudiandae commodi cum aperiam sunt asperiores impedit perspiciatis? Aliquam labore earum dignissimos quasi fuga impedit reprehenderit odit tempora assumenda aliquid eligendi dolorem, dolorum perspiciatis delectus quibusdam iure, sed inventore excepturi beatae. Voluptatibus, placeat amet optio hic quos repudiandae cumque non dolorem veniam commodi laboriosam omnis voluptatum quam autem magnam deleniti. Aut unde dolor nemo pariatur ipsum hic fugiat ex numquam. Incidunt, voluptatum! Ducimus maxime officia numquam quisquam quae dolorem? Aut at officiis, exercitationem nisi asperiores consectetur quaerat ratione voluptatem modi dolores quia nulla, nam culpa reiciendis eum ducimus deleniti? Qui doloremque dolore tempora alias dolorum eaque soluta possimus libero placeat vel quisquam facere maxime officia rerum quos consequuntur quia earum adipisci, deserunt suscipit sed! Error, esse? Perferendis quia odio dolores ea dolorem, laborum sed. Ipsa odio vero fuga sapiente assumenda quae nostrum odit quas illo laudantium nemo esse dignissimos tenetur, possimus, necessitatibus totam.
+            </div>
+        </div>
+        <div id="about">
+            <h2>About US</h2>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia aliquid amet beatae, in laudantium dolor, non quia eveniet inventore ex incidunt natus, autem illum itaque quasi voluptatem quibusdam exercitationem sapiente nostrum eaque est ab ducimus? Blanditiis nesciunt nam ratione aliquid inventore qui praesentium modi molestias, exercitationem quis ad nulla molestiae non, veniam rem quae aut error quam minus quo nihil? Quaerat autem ea, ducimus placeat laboriosam aperiam fugiat maiores nobis ex ab quos ipsa quisquam possimus impedit commodi repellendus, consequuntur expedita culpa aliquam optio accusantium. Totam cum temporibus placeat inventore, nobis eveniet dolorem cumque a? Itaque earum quas, dolorem alias ut sed nostrum enim, necessitatibus quaerat quis officia, dignissimos fuga doloremque libero facilis sapiente veniam? Incidunt, aperiam distinctio harum ullam ipsa quo maiores.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia aliquid amet beatae, in laudantium dolor, non quia eveniet inventore ex incidunt natus, autem illum itaque quasi voluptatem quibusdam exercitationem sapiente nostrum eaque est ab ducimus? Blanditiis nesciunt nam ratione aliquid inventore qui praesentium modi molestias, exercitationem quis ad nulla molestiae non, veniam rem quae aut error quam minus quo nihil? Quaerat autem ea, ducimus placeat laboriosam aperiam fugiat maiores nobis ex ab quos ipsa quisquam possimus impedit commodi repellendus, consequuntur expedita culpa aliquam optio accusantium. Totam cum temporibus placeat inventore, nobis eveniet dolorem cumque a? Itaque earum quas, dolorem alias ut sed nostrum enim, necessitatibus quaerat quis officia, dignissimos fuga doloremque libero facilis sapiente veniam? Incidunt, aperiam distinctio harum ullam ipsa quo maiores.
+            </div>
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At alias corporis vel magnam cum obcaecati velit veritatis officia ipsam, in aspernatur soluta facere ex expedita qui sed inventore. Accusamus similique omnis incidunt dolorum ducimus, velit recusandae illum fugit nostrum debitis labore ex aperiam enim aspernatur dignissimos eaque quia impedit exercitationem suscipit id! Sunt, consequatur eos tempore minima ea voluptatibus dolores. Aliquam totam nostrum possimus voluptatibus. Nemo earum cum nostrum veniam totam sapiente assumenda facilis illum repellat fuga? Maxime aperiam deleniti corporis hic quaerat quod optio pariatur, impedit architecto labore, numquam repudiandae aliquid vel unde voluptas quos fugit? Doloribus harum expedita animi fuga quidem, aliquid nostrum sed ex totam quos consequatur dolore quasi eum autem laboriosam quaerat beatae optio dicta necessitatibus. Deserunt similique accusantium quas est exercitationem commodi sed in ea consequuntur, rerum impedit expedita optio repellendus doloribus earum sit, consectetur cupiditate! Labore culpa, explicabo excepturi debitis eaque alias ea voluptatum repellat quo nisi. Ratione minima quia accusamus magnam nihil hic necessitatibus totam. Eveniet sapiente ipsa error provident consequuntur tenetur, natus sequi quam reprehenderit pariatur quo cupiditate cum voluptatem? Quibusdam dignissimos sapiente odio quos, nesciunt eaque nulla ullam minus magni animi exercitationem culpa itaque quasi accusamus necessitatibus distinctio? Blanditiis deserunt quas officia laborum. Culpa, quam earum quisquam suscipit facere id, mollitia praesentium odit ut minus assumenda repellendus quia beatae? Aliquam tempore quam ipsam recusandae incidunt, autem voluptates eius unde nihil quae voluptatum magnam expedita qui?
+            </div>
+        </div>
+    </main>
+</body>
+</html>
